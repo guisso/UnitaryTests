@@ -22,12 +22,17 @@ public class Conversor {
     public char converter(byte valor) {
         if (valor == 1) {
             return 'A';
-        } else if (valor == 2) {
-            return 'B';
-        } else if (valor == 3) {
-            return 'C';
-        } else {
-            return 'D';
         }
+
+        if (valor == 2) {
+            return 'B';
+        }
+
+        if (valor == 3) {
+            return 'C';
+        }
+
+        return 'D';
+
     }
 }
