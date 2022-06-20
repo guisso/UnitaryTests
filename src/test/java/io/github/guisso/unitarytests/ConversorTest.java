@@ -21,14 +21,14 @@ import org.junit.jupiter.api.TestMethodOrder;
  *
  * @author Luis Guisso &lt;luis dot guisso at ifnmg dot edu dot br&gt;
  */
-//@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ConversorTest {
 
     public ConversorTest() {
     }
 
     @Test
-//    @Order(1)
+    @Order(1)
     public void converter4ParaD() {
         System.out.println("converter4ParaD");
         Conversor c = new Conversor();
@@ -36,7 +36,7 @@ public class ConversorTest {
     }
 
     @Test
-//    @Order(2)
+    @Order(2)
     public void converter3ParaC() {
         System.out.println("converter3ParaC");
         Conversor c = new Conversor();
@@ -44,7 +44,7 @@ public class ConversorTest {
     }
 
     @Test
-//    @Order(3)
+    @Order(3)
     public void converter2ParaB() {
         System.out.println("converter2ParaB");
         Conversor c = new Conversor();
@@ -52,7 +52,7 @@ public class ConversorTest {
     }
 
     @Test
-//    @Order(4)
+    @Order(4)
     public void converter1ParaA() {
         System.out.println("converter1ParaA");
         Conversor c = new Conversor();
